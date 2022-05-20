@@ -27,7 +27,29 @@ window.addEventListener('load', ()=> {
 
         e.target.reset();
 
+        DisplayTodos();
+
 
     })
 
 })
+
+function DisplayTodos () {
+    const todoList = document.querySelector('#todo-list');
+
+    todoList.innerHTML = '';
+
+    todos.forEach(todo => {
+        const todoItem = document.createElement('div');
+        todoItem.classList.add('todo-item')
+
+        const label = document.createdElement('label');
+        const input = document.createdElement('input');
+        const span = document.createdElement('span');
+        const content = document.createdElement('div');
+        const actions = document.createdElement('div');
+        const edit = document.createdElement('button');
+        const deleteButton = document.createdElement('button');
+
+    })
+}
